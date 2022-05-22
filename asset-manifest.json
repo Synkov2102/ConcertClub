@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ConcertClub/static/css/main.22a944e1.css",
+    "main.js": "/ConcertClub/static/js/main.b2293267.js",
+    "static/media/TwentyOnePilots.png": "/ConcertClub/static/media/TwentyOnePilots.ede873f08d2bc83bc8a1.png",
+    "static/media/ProximaNova-Semibold.ttf": "/ConcertClub/static/media/ProximaNova-Semibold.be42827ac88aca64dbf0.ttf",
+    "static/media/OpenSans-Bold.ttf": "/ConcertClub/static/media/OpenSans-Bold.dfda0d04b1e6e74eb051.ttf",
+    "static/media/OpenSans-Light.ttf": "/ConcertClub/static/media/OpenSans-Light.1fc8a45c2ca9eae91b75.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/ConcertClub/static/media/OpenSans-SemiBold.55174aa1f4f5a88ec5eb.ttf",
+    "static/media/OpenSans-Bold.woff": "/ConcertClub/static/media/OpenSans-Bold.fa869de7dcd1fc13d9ed.woff",
+    "static/media/OpenSans-SemiBold.woff": "/ConcertClub/static/media/OpenSans-SemiBold.c7a3ffd87605fb2f5cab.woff",
+    "static/media/OpenSans-Light.woff": "/ConcertClub/static/media/OpenSans-Light.eb2482ea07e77b95c4b3.woff",
+    "static/media/ProximaNova-Semibold.woff": "/ConcertClub/static/media/ProximaNova-Semibold.a71877a1eef65838ed4c.woff",
+    "static/media/Alegreyasansscbold.woff": "/ConcertClub/static/media/Alegreyasansscbold.8ca4b26d3907e5264edd.woff",
+    "static/media/Alegreyasansscmedium.woff": "/ConcertClub/static/media/Alegreyasansscmedium.26a4e80cde4268aa87dd.woff",
+    "static/media/Alegreyasansscbold.woff2": "/ConcertClub/static/media/Alegreyasansscbold.df548e384f45a14fdcf9.woff2",
+    "static/media/Alegreyasansscmedium.woff2": "/ConcertClub/static/media/Alegreyasansscmedium.ef8c3e40f6b021e2c8be.woff2",
+    "index.html": "/ConcertClub/index.html",
+    "static/media/form_exit-button.svg": "/ConcertClub/static/media/form_exit-button.ec56f2e806c2d5f2e13ca83e62347fef.svg",
+    "main.22a944e1.css.map": "/ConcertClub/static/css/main.22a944e1.css.map",
+    "main.b2293267.js.map": "/ConcertClub/static/js/main.b2293267.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22a944e1.css",
+    "static/js/main.b2293267.js"
+  ]
+}
