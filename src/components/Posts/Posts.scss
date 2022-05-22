@@ -1,0 +1,39 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.posts {
+  @include block-width;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-top: 25px;
+
+  &__title {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 16px 0 15px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__list-button {
+    display: block;
+    text-decoration: none;
+    @include secondary-button;
+    width: 148px;
+    height: 35px;
+
+    margin: 20px auto;
+
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

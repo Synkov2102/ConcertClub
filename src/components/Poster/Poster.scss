@@ -1,0 +1,110 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.poster {
+  z-index: 0;
+  box-sizing: border-box;
+  margin: -70px auto 0 auto;
+  padding-top: 70px;
+  display: flex;
+  max-width: 1116px;
+  width: 100%;
+  height: 509px;
+  background-image: url(../../images/TwentyOnePilots.png);
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include alegreya-sc-font;
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    line-height: 1.2;
+    width: 394px;
+    margin: 157px auto 5px auto;
+    color: white;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1017px;
+      height: 156px;
+      top: -70%;
+      left: -80%;
+      z-index: -1;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #000000 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+
+  &__subtitle {
+    @include alegreya-sc-font;
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    line-height: 1.2;
+    width: 187px;
+    margin: 0 auto;
+    color: white;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 593px;
+      height: 156px;
+      left: -110%;
+      top: -120%;
+      z-index: -1;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #000000 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+
+  &__buttons-line {
+    margin: 96px 0 0 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 61px 0 61px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buy-button {
+    @include prime-button;
+    width: 205px;
+    height: 40px;
+    transition: transform 1s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &__button-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+    transition: transform 1s;
+    cursor: pointer;
+
+    &:active {
+      background: #ffffff;
+      color: black;
+    }
+    
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+}

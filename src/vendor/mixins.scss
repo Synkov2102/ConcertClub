@@ -1,0 +1,77 @@
+@import './fonts.scss';
+
+@mixin alegreya-sc-font {
+  font-family: 'Alegreya Sans SC', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin alegreya-sc-medium-font {
+  font-family: 'Alegreya Sans SC', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin proxima-nova-font {
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin open-sans-light-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin open-sans-normal-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin open-sans-bold-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+////////////////////
+
+@mixin block-width {
+  max-width: 1116px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 61px;
+}
+
+////////////////////
+@mixin prime-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include proxima-nova-font;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin secondary-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include open-sans-normal-font;
+  background: $main-black;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
+}

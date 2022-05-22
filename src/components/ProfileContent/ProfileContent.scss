@@ -1,0 +1,10 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.profile-content{
+    max-width: 1116px;
+    margin: auto;
+    margin-top: 36px;
+    border: 1px solid black;
+}

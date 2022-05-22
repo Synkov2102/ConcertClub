@@ -1,0 +1,61 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.header {
+  position: relative;
+  z-index: 2;
+  @include block-width;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+
+  &__home-button {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &__title {
+    @include alegreya-sc-font;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 2.14;
+
+    margin: 10px 0 0 0;
+  }
+
+  &__buttons-container {
+    margin: 15px 0;
+  }
+
+  &__version-button {
+    margin: 0;
+    padding: 0;
+    width: 257px;
+    height: 40px;
+
+    @include prime-button;
+
+    transition: transform 1s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &__profile-button {
+    margin: 0 0 0 15px;
+    padding: 0;
+    width: 205px;
+    height: 40px;
+    @include prime-button;
+    transition: transform 1s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+}

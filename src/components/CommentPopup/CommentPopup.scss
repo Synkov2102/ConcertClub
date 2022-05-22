@@ -1,0 +1,126 @@
+@import "../../index.scss";
+@import "../../vendor/mixins.scss";
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: visibility 0.5s, opacity 0.5s;
+  z-index: 5;
+
+
+  &_open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &__container{
+    max-width: 75vw;
+    margin:auto;
+    display: block;
+    position: relative;
+  }
+
+  &__input{
+    margin: 30px 0 0 0;
+    border: none;
+    background: #ffffff;
+    outline-color: #80A6FF;
+    height: 24px;
+    width: 358px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  
+  &__button{
+    margin: 0 auto 37px auto;
+    border: none;
+    background: black;
+    outline: none;
+    height: 50px;
+    width: 358px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  &__button:hover{
+    opacity: 0.8;
+  }
+  
+  &__exit-button {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  &__form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 430px;
+    margin: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  &__exit-button-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__title {
+    text-align: center;
+    color: black;
+    width: 80%;
+    font-size: 22px;
+    line-height: 25px;
+    margin: 20px auto 10px auto;
+  }
+  
+  &__text-inputs{
+    margin: 54px auto 48px auto;
+    text-align: center;
+    border:none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+  }
+  
+  
+  &__exit-button:hover {
+    opacity: 0.6;
+  }
+}
+
+
+
+

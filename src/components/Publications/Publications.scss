@@ -1,0 +1,46 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.publications {
+  @include block-width;
+
+  &__title {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 23px 0 0 0;
+  }
+
+  &__list {
+    margin-top: 20px;
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__publication {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    &:nth-child(2) {
+      background-color: lightblue;
+    }
+
+    &:nth-child(4) {
+      background-color: aquamarine;
+    }
+
+    &:nth-child(6) {
+      background-color: lightgray;
+    }
+  }
+}

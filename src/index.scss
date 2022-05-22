@@ -1,0 +1,12 @@
+@import "./vendor/fonts.scss";
+@import "./vendor/mixins.scss";
+@import "./vendor/constants.scss";
+
+.body{
+    padding: 0;
+    margin: 0;
+}
+
+.no-text-decoration{
+    text-decoration: none;
+}

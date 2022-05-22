@@ -1,0 +1,117 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.buyers {
+  position: relative;
+  width: 100%;
+  @include block-width;
+
+  &:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 6%;
+    bottom: 3px;
+    width: 88%;
+    box-sizing: border-box;
+    border-bottom: 3px solid #0D1E4B;
+    opacity: 0.2;
+  }
+
+  &__info-container {
+    margin: 31px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__title {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 0;
+  }
+
+  &__counter {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 0;
+
+    i {
+      font-style: normal;
+      color: rgba(0, 0, 0, 0.41);
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    margin: 16px 0 0 0;
+    padding: 2px 2px 2px 2px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      height: 8px;;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 4px;
+      background-color: #0D1E4B;
+    }
+  }
+}
+
+.buyer-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 143px;
+  margin-right: 20px; 
+  padding-left: 17px;
+  padding-right: 17px;
+  border: none;
+  border: 1px solid #DADADA;
+
+  &:hover {
+    outline: 1px solid #666;
+  }
+
+  &__title {
+    width: 195px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 195px;
+    margin: 14px 0 4px 0;
+    @include open-sans-bold-font;
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  &__city {
+    margin: 0;
+    @include open-sans-light-font;
+    color: rgba(0, 0, 0, 0.41);
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  &__profile-button {
+    margin: 35px 0 0 0;
+    @include secondary-button;
+    width: 148px;
+    height: 40px;
+
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

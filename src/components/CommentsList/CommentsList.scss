@@ -1,0 +1,28 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.comments-list {
+  @include block-width;
+  border: 1px solid #000000;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  &__title {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 16px 0 15px 0;
+  }
+
+  &__add-button {
+    display: block;
+    @include secondary-button;
+    width: 257px;
+    height: 40px;
+    margin: 10px auto;
+  }
+}
+
+

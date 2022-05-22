@@ -1,0 +1,21 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.posts-list {
+  width: 100%;
+  @include block-width;
+  border: 1px solid #000000;
+  
+  margin-top: 25px;
+
+  &__title {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 16px 0 15px 0;
+  }
+
+  &__list {
+  }
+}

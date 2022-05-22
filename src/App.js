@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { Main, Profile, ProfilePosts, PostDetails } from "./pages/pages";
+import React from "react";
+import { Route } from 'react-router-dom'
+import { useDispatch } from "react-redux";
+
+import { addProfiles } from "./store/profilesSlice";
+
+import api from "./utils/Api";
+
 
 function App() {
+  const dispatch = useDispatch();
+
+  const setProfiles = (profiles) => dispatch(addProfiles({ profiles }))
+
+  React.useEffect(() => {
+    api
+      .getProfilesInfo()
+      .then((data) => {
+        setProfiles(data)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Route exact path="/">
+        <Main />
+      </Route>
+      <Route exact path="/profile/:id">
+        <Profile />
+      </Route>
+      <Route path="/profile/:id/posts">
+        <ProfilePosts />
+      </Route>
+
+      <Route path="/post/:id">
+        <PostDetails />
+      </Route>
+    </>
   );
 }
 

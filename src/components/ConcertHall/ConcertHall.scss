@@ -1,0 +1,129 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.concert-hall {
+  @include block-width;
+  display: flex;
+  padding-top: 47px;
+
+  &__title {
+    @include alegreya-sc-medium-font;
+    font-size: 35px;
+    line-height: 1.14;
+    margin: 0 0 16px 0;
+  }
+
+  &__info-container {
+    position: relative;
+    width: 437px;
+
+    &:before{
+      content: "";
+      z-index: -1;
+      position: absolute;
+      left: 2px;
+      bottom: 0;
+      height: 215px;
+      border-left: 3px solid #0D1E4B;
+      opacity: 0.2;
+    }
+  }
+
+  &__text-block {
+    width: 326px;
+    height: 215px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 20px;
+      background-color: #0D1E4B;
+    }
+  }
+
+  &__text-wrapper{
+    direction:ltr;
+    padding-left: 42px;
+  }
+
+  &__main-text {
+    @include open-sans-bold-font;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+
+  &__text {
+    @include open-sans-normal-font;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #939393;
+  }
+}
+
+.request {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border: 1px solid #dadada;
+
+  form {
+    margin: 0 26px;
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      box-sizing: border-box;
+      padding: 10px 20px 0 20px;
+      width: 500px;
+      height: 134px;
+      resize: none;
+      text-align: start;
+      border: 1px solid #0d1e4b;
+      margin-bottom: 16px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        @include open-sans-normal-font;
+        font-size: 11px;
+        line-height: 15px;
+        color: #969696;
+      }
+    }
+  }
+
+  &__title {
+    @include open-sans-normal-font;
+    display: flex;
+    margin: 13px 0 9px 26px;
+    font-size: 18px;
+    line-height: 2.22;
+  }
+
+  &__button {
+    align-self: end;
+    margin: 0 0 25px 0;
+    width: 100px;
+    height: 35px;
+    @include secondary-button;
+
+    transition: transform 1s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+}

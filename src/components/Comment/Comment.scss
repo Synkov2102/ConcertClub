@@ -1,0 +1,45 @@
+@import '../../index.scss';
+@import '../../vendor/mixins.scss';
+@import '../../vendor/constants.scss';
+
+.comment {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  padding: 15px 0;
+
+  &__title {
+    width: 95%;
+    @include open-sans-bold-font;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 95%;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 auto 5px auto;
+  }
+
+  &__email {
+    width: 95%;
+    @include open-sans-bold-font;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.43;
+    line-height: 23px;
+    margin: 0 auto 5px auto;
+  }
+
+  &__preview-text {
+    width: 95%;
+    max-width: 95%;
+    @include open-sans-light-font;
+    font-size: 12px;
+    line-height: 1.43;
+    margin: 0 auto 0 auto;
+    color: rgba(0, 0, 0, 0.41);
+  }
+}
